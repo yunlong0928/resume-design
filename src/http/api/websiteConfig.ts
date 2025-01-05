@@ -12,7 +12,7 @@ export const webConfigUpdateAsync: any = (data: any) => {
 // 查询网站配置
 export const getWebsiteConfigAsync: any = () => {
   return http.request({
-    url: '/huajian/common/getWebsiteConfig',
+    url: '/resume/web_config',
     method: 'get'
   });
 };

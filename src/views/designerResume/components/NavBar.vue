@@ -29,7 +29,6 @@
     </div>
     <div class="nav-center"> </div>
     <div class="nav-right">
-      <el-button type="text" style="margin-right: 10px" @click="toOld">旧版入口</el-button>
       <el-tooltip effect="dark" content="下载到本地" placement="bottom">
         <div class="icon-box icon-download" @click="downloadResume">
           <svg-icon icon-name="icon-xiazai" color="#fff" size="17px"></svg-icon>
@@ -77,7 +76,7 @@
   import 'element-plus/es/components/message-box/style/index';
   import { storeToRefs } from 'pinia';
   import DownloadDialog from '../../designer/components/DownloadDialog.vue';
-  import { getIntegralPayNumber } from '@/views/LegoDesigner/utils/common';
+  //import { getIntegralPayNumber } from '@/views/LegoDesigner/utils/common';
   import { debounce } from 'lodash';
   import { saveDraftAsync } from '@/http/api/createTemplate';
   import { formatListDate } from '@/utils/common';

@@ -71,12 +71,12 @@
     </label>
     <!--内容区域-->
     <div class="content-box">
-      <h1>一款开源、免费、专业的简历制作神器</h1>
-      <p>交付源码级JSON，提供海量模版，实时导出超高清PDF</p>
+      <h1>简单好用的AI简历制作工具</h1>
+      <p>在线制作简历、AI改写简历、AI简历诊断</p>
 
       <!-- 查看更多按钮 -->
       <div class="see-more-box">
-        <hj-button-1 text="免费制作专业简历" @click="freeMakeResume"></hj-button-1>
+        <hj-button-1 text="一键快速生成简历" @click="freeMakeResume"></hj-button-1>
         <!-- <hj-button-1 text="积木创作" @click="toLego"></hj-button-1>
         <hj-button-1 v-config:open_get_source_code text="获取源码" @click="toWebCode"></hj-button-1> -->
       </div>

@@ -3,7 +3,7 @@ import http from '../request';
 // 查询首页菜单列表
 export const getIndexMenuListAsync: any = () => {
   return http.request({
-    url: '/huajian/common/getIndexMenuList',
+    url: '/resume/menu_list',
     method: 'get'
   });
 };

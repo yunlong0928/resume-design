@@ -140,7 +140,8 @@
     // 查询用户简历
     getUserTemplate();
   } else {
-    getTemplateData();
+    //getTemplateData();
+    getUserTemplate();
   }
 
   // 初始化和窗口变化事件绑定
@@ -175,9 +176,7 @@
 
     clearInterval(timer);
     percentage.value = 100;
-    // 查询用简币信息
-    const { getUserIntegralTotal } = appStore.useUserInfoStore;
-    getUserIntegralTotal();
+
   };
 
   // 关闭进度弹窗

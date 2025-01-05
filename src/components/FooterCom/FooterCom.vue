@@ -1,76 +1,40 @@
 <template>
   <div class="footer-box">
-    <!-- 相关推荐 -->
+    <!-- 相关信息 -->
     <div class="recommend">
-      <!-- 联系我 -->
-      <div class="contact-me">
-        <div v-viewer class="add-wechat">
-          <img src="@/assets/images/wechat.jpg" alt="个人微信" />
-          <p>添加微信</p>
-        </div>
-        <div v-viewer class="concern-zhihu">
-          <img src="@/assets/images/gzh.jpg" alt="资料分享大师" />
-          <p>关注公众号</p>
-        </div>
-      </div>
-      <!-- 关于我 -->
+      <!-- 关于我们 -->
       <div class="about-me">
-        <h1>社交平台</h1>
-        <p>
-          <a
-            href="https://space.bilibili.com/493520625?spm_id_from=333.1007.0.0"
-            target="_blank"
-            rel="noopener noreferrer"
-            >哔哩哔哩</a
-          >
-        </p>
-        <p>
-          <a
-            href="https://juejin.cn/user/3034307822112798"
-            target="_blank"
-            rel="noopener noreferrer"
-            >稀土掘金</a
-          >
-        </p>
-        <p>
-          <a
-            href="https://www.zhihu.com/people/luhongquan"
-            target="_blank"
-            rel="noopener noreferrer"
-            >个人知乎</a
-          >
-        </p>
+        <h1>关于我们</h1>
+        <p>职行AI简历是一款智能简历制作工具</p>
+        <p>致力于为求职者提供专业的简历解决方案</p>
+        <p>让简历制作更简单、更高效</p>
       </div>
-      <!-- 友情链接 -->
+      <!-- 产品服务 -->
+      <div class="about-me">
+        <h1>产品服务</h1>
+        <p>智能简历制作</p>
+        <p>在线简历模板</p>
+        <p>简历导出服务</p>
+      </div>
+      <!-- 联系我们 -->
       <div class="links">
-        <h1>友情链接</h1>
-        <p>
-          <a href="https://www.ubrand.com/" target="_blank" rel="noopener noreferrer">AI品牌设计</a>
-        </p>
-        <p>
-          <a href="https://hao.logosc.cn/" target="_blank" rel="noopener noreferrer">AI神器集</a>
-        </p>
+        <h1>联系我们</h1>
+        <p>商务合作：business@zhixing.ai</p>
+        <p>用户反馈：feedback@zhixing.ai</p>
+        <p>加入我们：hr@zhixing.ai</p>
       </div>
     </div>
     <!-- 版权声明 -->
     <div class="copyright-notice">
-      <p>Copyright © 2024 猫步简历 All Rights Reserved.</p>
+      <p>Copyright © 2024 职行AI简历 All Rights Reserved.</p>
     </div>
     <!-- 备案号 -->
     <div class="icp-record-number">
       <p>
         <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer"
-          >蜀ICP备2020034752号-4</a
+          >蜀ICP备xxx号-4</a
         >
       </p>
-      <!-- <p>
-        <a
-          target="_blank"
-          href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010802001313"
-          style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px"
-          >川公网安备 51010802001313号</a
-        >
-      </p> -->
     </div>
   </div>
 </template>
@@ -97,33 +61,6 @@
         padding-bottom: 10px;
         letter-spacing: 1px;
         font-weight: 500;
-      }
-      .contact-me {
-        display: flex;
-        img {
-          width: 105px;
-          height: 105px;
-        }
-        p {
-          font-size: 14px;
-          color: #fff;
-          margin-top: 10px;
-        }
-        .add-wechat {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-right: 40px;
-          cursor: pointer;
-          user-select: none;
-        }
-        .concern-zhihu {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          cursor: pointer;
-          user-select: none;
-        }
       }
       .about-me {
         height: 100%;

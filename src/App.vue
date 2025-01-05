@@ -26,12 +26,11 @@
     meta: [
       {
         name: 'description',
-        content:
-          '猫步简历-开源简历制作神器！免费制作一份精美的简历！内置两款设计器、快速设计、简历、封面、海报均可免费制作，支持一键导出高清PDF、JSON数据等。'
+        content: '职行AI简历- AI简历制作神器！'
       },
       {
         name: 'keywords',
-        content: '简历 开源 设计器 制作 PDF 高清简历 免费开源'
+        content: '简历 AI'
       }
     ]
   });
@@ -40,25 +39,6 @@
   // openAndCloseLoadingByTime(1500); // 等待动画层
   const { refreshUuid } = appStore.useRefreshStore;
   const route = useRoute();
-
-  // 查询和更新用户信息
-  const { getAndUpdateUserInfo } = appStore.useUserInfoStore;
-  const { token } = appStore.useTokenStore;
-  if (token) {
-    getAndUpdateUserInfo();
-  }
-
-  // 查询用简币信息
-  const { getUserIntegralTotal } = appStore.useUserInfoStore;
-  if (token) {
-    getUserIntegralTotal();
-  }
-
-  // 增加网站访问量
-  const addWebsiteViews = () => {
-    addWebsiteViewsAsync();
-  };
-  addWebsiteViews();
 
   // 查询网站配置
   const { getWebsiteConfig } = appStore.useWebsiteConfigStore;

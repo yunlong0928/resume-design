@@ -128,7 +128,7 @@
   import { exportLegoPNG, exportLegoPdf } from '../utils/pdf';
   import ProcessBarDialog from '@/components/ProcessBarDialog/ProcessBarDialog.vue';
   import { onBeforeRouteLeave } from 'vue-router';
-  import { getIntegralPayNumber } from '../utils/common';
+ // import { getIntegralPayNumber } from '../utils/common';
 
   const { HJSchemaJsonStore, draftTips } = storeToRefs(appStore.useLegoJsonStore);
   const { resetHJSchemaJsonData } = appStore.useLegoJsonStore;

@@ -23,8 +23,8 @@
     </a>
 </p>
 
-<h1 align="center">猫步简历</h1>
-<h2 align="center">一款开源免费简历制作神器</h2>
+<h1 align="center">职行AI简历</h1>
+<h2 align="center">AI简历</h2>
 
 <p align="center"><b>基于Vue3 + TypeScript + Vite + Element-plus + pinia实现</b></p>
 

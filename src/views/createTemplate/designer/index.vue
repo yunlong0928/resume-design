@@ -55,7 +55,7 @@
     const data = await getTemplateByIdAsync(id.value);
     if (data.status === 200) {
       templateInfo.value = data.data;
-      HJNewJsonStore.value = data.data.template_json;
+      HJNewJsonStore.value = JSON.parse(data.data.template_json);
       HJNewJsonStore.value.props.title = templateInfo.value.template_title;
     } else {
       templateInfo.value = null;

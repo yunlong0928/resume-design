@@ -167,7 +167,7 @@
   import DownloadDialog from './DownloadDialog.vue';
   import ViewJsonDrawer from './ViewJsonDrawer.vue';
   import CONFIG from '@/config';
-  import { getIntegralPayNumber } from '@/views/LegoDesigner/utils/common';
+  // import { getIntegralPayNumber } from '@/views/LegoDesigner/utils/common';
 
   let { resumeJsonNewStore } = storeToRefs(appStore.useResumeJsonNewStore); // store里的模板数据
   const emit = defineEmits([

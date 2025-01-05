@@ -7,7 +7,7 @@
       size="25px"
     ></svg-icon>
     <span>猫步简历</span> -->
-    <img src="@/assets/images/logo-maobu.png" />
+    <img src="@/assets/images/logo.svg" />
   </div>
 </template>
 <script lang="ts" setup>

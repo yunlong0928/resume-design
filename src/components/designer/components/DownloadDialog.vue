@@ -12,10 +12,7 @@
       <div class="content-down-btn">
         <!-- 下载为图片 -->
         <div class="download-img-box">
-          <div
-            class="download-com-box img-box"
-            @click="downloadDialog('img')"
-          >
+          <div class="download-com-box img-box" @click="downloadDialog('img')">
             <svg-icon icon-name="icon-tupian" color="#fff" size="26px"></svg-icon>
             <span>下载图片</span>
           </div>
@@ -23,76 +20,35 @@
         </div>
         <!-- 下载PDF -->
         <div class="download-pdf-box">
-          <div
-            class="download-com-box pdf-box"
-            @click="downloadDialog('pdf')"
-          >
+          <div class="download-com-box pdf-box" @click="downloadDialog('pdf')">
             <svg-icon icon-name="icon-pdf" color="#fff" size="26px"></svg-icon>
             <span>下载PDF</span>
           </div>
-          <p> 适合打印、在线投递等(<span>推荐</span>)</p>
+          <p>适合打印、在线投递等(<span>推荐</span>)</p>
         </div>
       </div>
     </div>
   </el-dialog>
-
-  <!-- 警告弹窗 -->
-  <pay-integral-dialog
-    :title="title"
-    :dialog-get-integral-visible="dialogGetIntegralVisible"
-    :pay-number="-Math.abs(exportPdfPayIntegral) || 0"
-    :confirm-disabled="false"
-    placeholder="下载该创作"
-    @cancle="handleCancleDialog"
-    @confirm="handleConfirmDialog"
-  ></pay-integral-dialog>
 </template>
 
 <script lang="ts" setup>
-  import appStore from '@/store';
-  import { storeToRefs } from 'pinia';
-
-  // 获取用户会员信息
-  const { membershipInfo } = storeToRefs(appStore.useMembershipStore);
-
   const emit = defineEmits(['closeDownloadDialog', 'downloadFile']);
   interface TDialog {
     dialogDownloadVisible: boolean;
-    exportPdfPayIntegral: number;
-    exportImgPayIntegral: number;
   }
   const props = withDefaults(defineProps<TDialog>(), {
-    dialogDownloadVisible: false,
-    exportPdfPayIntegral: 0,
-    exportImgPayIntegral: 0
+    dialogDownloadVisible: false
   });
 
-  // 打开警告弹窗
-  const downloadType = ref<string>('');
-  const dialogGetIntegralVisible = ref<boolean>(false);
+  // 下载简历
   const downloadDialog = async (type: string) => {
-    downloadType.value = type;
-    emit('downloadFile', downloadType.value);
-  };
-
-  // 取消警告弹窗
-  const handleCancleDialog = () => {
-    dialogGetIntegralVisible.value = false;
-  };
-
-  // 确定警告弹窗
-  const handleConfirmDialog = () => {
-    dialogGetIntegralVisible.value = false;
-    emit('downloadFile', downloadType.value);
+    emit('downloadFile', type);
   };
 
   // 取消
   const handleClose = () => {
     emit('closeDownloadDialog');
   };
-
-  // 标题
-  const title = ref<string>('');
 </script>
 <style lang="scss" scoped>
   .dialog-footer button:first-child {
@@ -145,4 +101,4 @@
       }
     }
   }
-</style>
+</style> 

@@ -29,16 +29,7 @@
           <el-button class="use-template-btn" type="primary" size="large" @click="handleToUse"
             >使用此模版</el-button
           >
-          <!-- 特别说明 -->
-          <div class="template-tips">
-            <p class="tips">特此说明：</p>
-            <p class="tips-content"
-              >目前在线编辑仅支持PDF格式的简历下载，需要word文档的用户请移步<span
-                @click="toWordTemplate"
-                >模版商城</span
-              >进行下载。</p
-            >
-          </div>
+
         </div>
         <div class="right-box-bottom">
           <!-- 标题 -->

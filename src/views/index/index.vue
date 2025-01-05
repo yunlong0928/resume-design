@@ -58,11 +58,11 @@
   import { onBeforeUnmount, onMounted, ref } from 'vue';
   import { throttle } from 'lodash';
   // import GithubCard from '@/components/GihubCard/GithubCard.vue';
-  import WebData from './components/WebData.vue';
+  // import WebData from './components/WebData.vue';
   import NoticeDialog from '@/components/NoticeDialog/NoticeDialog.vue';
-  import SelectTemplateByUse from './components/SelectTemplateByUse.vue';
-  import ResumeFunctionIntroduce from './components/ResumeFunctionIntroduce.vue';
-  import WebsiteOpenSource from './components/WebsiteOpenSource.vue';
+  // import SelectTemplateByUse from './components/SelectTemplateByUse.vue';
+  // import ResumeFunctionIntroduce from './components/ResumeFunctionIntroduce.vue';
+  // import WebsiteOpenSource from './components/WebsiteOpenSource.vue';
   import { useHead } from '@vueuse/head';
   import { storeToRefs } from 'pinia';
   import appStore from '@/store';

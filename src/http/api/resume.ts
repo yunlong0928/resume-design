@@ -29,7 +29,7 @@ export const deleteTemplateAsync: any = (id: string) => {
 // 查询模板列表
 export const getTemplateListAsync: any = (params: any) => {
   return http.request({
-    url: '/huajian/common/getTemplateList',
+    url: '/resume/template_list',
     method: 'get',
     params: params
   });
@@ -38,7 +38,7 @@ export const getTemplateListAsync: any = (params: any) => {
 // 查询单个简历数据-有草稿则会返回草稿
 export const getTemplateInfoAsync: any = (id: string) => {
   return http.request({
-    url: `/huajian/resume/template/${id}`,
+    url: `/resume/template/${id}`,
     method: 'get'
   });
 };
@@ -89,20 +89,34 @@ export const deleteUserResumeAsync: any = (id: string) => {
 // 导出为pdf
 export const getResumePdfAsync: any = (params: any) => {
   return http.request({
-    url: '/huajian/pdf/getPdf',
+    url: '/resume/export_pdf_file',
     method: 'post',
     responseType: 'blob',
-    data: params
+    data: {
+      url: params.url,
+      printBackground: params.printBackground,
+      timezone: params.timezone,
+      margin: params.margin,
+      filename: params.filename,
+      format: params.format
+    }
   });
 };
 
 // 导出为PNG
 export const getPNGAsync: any = (params: any) => {
   return http.request({
-    url: '/huajian/pdf/getPNG',
+    url: '/resume/export_image',
+<<<<<<< Updated upstream
     method: 'get',
+=======
+    method: 'post',
+>>>>>>> Stashed changes
     responseType: 'blob',
-    params: params
+    data: {
+      url: params.url,
+      format: params.format
+    }
   });
 };
 
