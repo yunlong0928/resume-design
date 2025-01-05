@@ -107,11 +107,8 @@ export const getResumePdfAsync: any = (params: any) => {
 export const getPNGAsync: any = (params: any) => {
   return http.request({
     url: '/resume/export_image',
-<<<<<<< Updated upstream
-    method: 'get',
-=======
     method: 'post',
->>>>>>> Stashed changes
+
     responseType: 'blob',
     data: {
       url: params.url,
